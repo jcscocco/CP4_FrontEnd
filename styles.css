@@ -609,3 +609,59 @@ h2 {
   font-size: 12px;
 }
 
+/* Tablet */
+@media (max-width: 900px) {
+  .atalhos-do-menu { gap: 14px; font-size: 12px; }
+  .duas-colunas { gap: 35px; }
+  .linha-de-cima { grid-template-columns: repeat(2, 1fr); }
+  .linha-de-cima .cartao:last-child { grid-column: 1 / -1; }
+  .grade-de-planos { gap: 10px; }
+  .plano { padding: 22px 15px; }
+  .microfone { min-width: 180px; height: 180px; font-size: 100px; }
+}
+
+/* Celular */
+@media (max-width: 700px) {
+  .secao { padding: 65px 0; }
+  h2 { font-size: 28px; letter-spacing: -1px; }
+  .menu { min-height: 68px; }
+  .atalhos-do-menu { display: none; }
+  .menu .botao { min-height: 38px; padding: 8px 12px; font-size: 12px; }
+
+  .bora-cantar { min-height: 630px; padding-top: 125px; }
+  .onda { margin-bottom: 18px; }
+  .bora-cantar h1 { max-width: 500px; font-size: 40px; letter-spacing: -2px; }
+  .frase-da-capa { font-size: 18px; }
+  .botoes-da-capa .botao { min-height: 42px; padding: 8px 15px; font-size: 12px; }
+  .celulares { height: 260px; gap: 15px; margin-top: 35px; }
+  .celular-roxo { width: 145px; height: 235px; }
+  .celular-preto { width: 160px; height: 260px; }
+  .capa-da-musica { height: 58px; font-size: 32px; }
+  .musicas span { height: 45px; }
+
+  .duas-colunas { grid-template-columns: 1fr; }
+  .texto-do-app { grid-row: 1; }
+  .quadro-do-app { min-height: 350px; }
+
+  .linha-de-cima,
+  .linha-de-baixo,
+  .grade-de-planos { grid-template-columns: 1fr; }
+  .linha-de-cima .cartao:last-child { grid-column: auto; }
+  .grade-de-planos { max-width: 450px; margin: 0 auto; gap: 15px; }
+  .plano { padding: 24px; }
+  .plano > p:not(.valor) { min-height: 0; }
+
+  .chamada-final { flex-direction: column; align-items: stretch; padding: 35px 25px; }
+  .microfone { min-width: 0; width: 180px; height: 180px; margin: 0 auto; }
+  .colunas-do-rodape { grid-template-columns: repeat(2, 1fr); }
+  .colunas-do-rodape .marca { grid-column: 1 / -1; }
+}
+
+@media (max-width: 380px) {
+  .limite { width: calc(100% - 30px); }
+  .bora-cantar h1 { font-size: 36px; }
+  .celulares { gap: 8px; }
+  .celular-roxo { width: 125px; height: 215px; }
+  .celular-preto { width: 140px; height: 240px; }
+  .chamada-final { padding: 30px 18px; }
+}
